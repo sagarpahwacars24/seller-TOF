@@ -1,0 +1,838 @@
+package saurav1;
+import java.util.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Cell;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Test12 {
+
+	public static void main(String[] args) throws IOException {
+		
+//		WebDriver driver=new ChromeDriver();
+//		driver.get("https://www.google.co.in/");
+//driver.findElement(By.xpath("//textarea[@class='gLFyf']")).sendKeys("selenium");
+//List<WebElement> a=driver.findElements(By.xpath("(//ul[@class='G43f7e'])[1]"));
+//for(WebElement b:a) {
+//	String name=b.getText();
+//	System.out.println(name);
+//}
+//
+//driver.quit();
+		
+		
+//		 to generate a random string
+// String randomString = generateRandomString(10);
+//	        System.out.println("Random String: " + randomString);
+//		
+//
+//	}
+//	 
+//	public static String generateRandomString(int length) {
+//	        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//	        StringBuilder stringBuilder = new StringBuilder();
+//	        Random random = new Random();
+//	        for (int i = 0; i < length; i++) {
+//	            int index = random.nextInt(characters.length());
+//	            stringBuilder.append(characters.charAt(index));
+//	        }
+//	        return stringBuilder.toString();
+		
+//		reverse a string or reverse sentence word by word
+//		String a="saurav is good";
+//		String b="";
+//		for(int i=0;i<=a.length()-1;i++) {
+//			 b=a.charAt(i)+b;
+//			 }
+//			 System.out.println(b);
+//		
+		
+		
+//		Reverse word by word without reversing it
+//		String a="saurav is good";
+//		String b="";
+//		String[] c=a.split(" ");
+//		for(int i=0;i<=c.length-1;i++) {
+//         if(i!=0) {
+//			 b=" "+b;
+//         }
+//		 b=c[i]+b;
+//		
+//		 }
+//		
+//		
+//		System.out.println(b);
+//		Remove duplicate in array
+//		 int[] a = {2,8,7,10,3,6,1,4,9,5,9,9};
+//	       int temp=0;
+//
+//	       for(int i=0;i<a.length-1;i++){
+//	           for(int j=i+1;j<a.length;j++){
+//	               if(a[i]>a[j]){
+//	                   temp=a[i];
+//	                   a[i]=a[j];
+//	                   a[j]=temp;
+//	               }
+//	                
+//	           }
+//	          
+//	          
+//	       }
+//	      for(int i=0;i<a.length-1;i++){
+////	        if(i==0 || a[i]!=a[i-1]){
+//	    	  if(a[i]!=a[i+1]) {
+//	           System.out.print(a[i]+ "  ");
+//	      
+//	        }
+//	       } 
+		
+//		find duplicate in array
+//		int[] a = {2,8,7,10,3,6,1,4,9,5,9,9};
+//	       int temp=0;
+//	       int i,j=0;
+//	       for(i=0;i<a.length-1;i++){
+//	           for( j=i+1;j<a.length-1;j++){
+//	               if(a[i]>a[j]){
+//	                   temp=a[i];
+//	                   a[i]=a[j];
+//	                   a[j]=temp;
+//	               }
+//	                
+//	           }
+//	          
+//	          
+//	       }
+//	        if(a[i]==a[j]){
+//	           System.out.println(a[i]);
+//	      
+//	       }	
+		
+		
+//		second highest element in the array or sorting of an array or find duplicate in array
+		
+//		int[] a= {1,5,99,2,8,66,92,6,6,1};
+//		int temp=0;
+//		for(int i=0;i<=a.length-1;i++) {
+//			for(int j=i+1;j<a.length;j++) {
+//				if(a[i]>a[j]) {
+//				
+//				temp=a[i];
+//				a[i]=a[j];
+//				a[j]=temp;
+//			
+//		
+//				
+//				
+//				}
+//				
+//			}
+//			
+//		}
+//		System.out.println(a[a.length-2]);
+		
+//		remove duplicate in array
+//		int[] a= {1,5,99,2,8,66,92,6,6,1};
+//		int temp=0;
+//		for(int i=0;i<a.length;i++) {
+//			for(int j=i+1;j<a.length;j++) {
+//				if(a[i]>a[j]) {
+//					temp=a[i];
+//					a[i]=a[j];
+//					a[j]=temp;
+//				}
+//}
+//		
+//		}
+//		
+//		for(int i=0;i<a.length-1;i++) {
+//			if(a[i]!=a[i+1]) {     //to remove duplicate
+////		if(a[i]==a[i+1]) {        //to get duplicate
+//				System.out.print(a[i]+",");
+//			}
+//		}
+		
+//	palindrome
+//		int a=151,temp,sum=0,b;
+//		Scanner s=new Scanner(System.in);
+//		System.out.println("Enter number");
+//		 a=s.nextInt();
+//		
+//		temp=a;
+//		while(temp>0) {
+//			b=temp%10;
+//			sum=(sum*10)+b;
+//			temp/=10;
+//		}
+//		if(sum==a) {
+//			System.out.println("palindrome");
+//		}else {
+//			System.out.println("not a palindrome");
+//		}
+		
+//String s="saurav is a good boy";
+//String b="";
+//for(int i=s.length()-1;i>0;i--) {
+//	char c=s.charAt(i);
+//	b=b+c;
+//
+//}
+//System.out.println(b);
+		
+//		reverse string word by word
+//		String a="Saurav is good";
+//		String b="";
+//	String[] c=a.split(" ");
+//	for(int i=0;i<c.length;i++) {
+//		String reverse="";
+//		for(int j=c[i].length()-1;j>=0;j--) {
+//			reverse+=c[i].charAt(j);
+//		}
+//		b+=reverse;
+//		if(i!=c.length-1) {
+//			b+=" ";
+//		}
+//		
+//		}
+//	System.out.println(b);
+		
+//		driver.get("https://www.cars24.com");
+//
+//        List<WebElement> links = driver.findElements(By.tagName("a"));
+//try {
+//        // Check each link
+//        for (WebElement link : links) {
+//            String url = link.getAttribute("href");
+//            if (url != null && !url.isEmpty()) {
+//                checkLink(url);
+//            }
+//        }
+//    } finally {
+//        // Quit the WebDriver
+//        driver.quit();
+//    }
+//}
+//
+//public static void checkLink(String linkUrl) {
+//    try {
+//        URL url = new URL(linkUrl);
+//        HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+//        httpURLConnection.setRequestMethod("HEAD");
+//        httpURLConnection.connect();
+//        int responseCode = httpURLConnection.getResponseCode();
+//
+//        if (responseCode == 200) {
+//            System.out.println("Working link: " + linkUrl + " - Status: " + responseCode);
+//        } else {
+//            System.out.println("Broken link: " + linkUrl + " - Status: " + responseCode);
+//        }
+//    } catch (IOException e) {
+//        System.out.println("Broken link: " + linkUrl + " - Error: " + e.getMessage());	
+//    }
+		
+		
+//	Writing the suggested in the excel	
+		
+//		 XSSFWorkbook workbook = new XSSFWorkbook();
+//	        XSSFSheet sheet = workbook.createSheet("Suggested Texts");
+//	        XSSFRow headerRow = sheet.createRow(0);
+//	        Cell headerCell0 = headerRow.createCell(0);
+//	        headerCell0.setCellValue("Suggestions");
+//		driver.get("https://www.google.com");
+//		WebElement enterText= driver.findElement(By.xpath("//textarea[@title='Search']"));
+//		enterText.click();
+//		enterText.sendKeys("Test Automation");
+//		List<WebElement> result = driver.findElements(By.xpath("//div[@jsname='aajZCb']/div/div"));
+//		  int rowNum = 1;
+//		for(WebElement results : result) {
+//			
+//			String Suggestionresult=results.getText();
+//			if(Suggestionresult!=null && !Suggestionresult.isEmpty()) {
+//				System.out.println("results are:"+Suggestionresult );
+//				
+//				XSSFRow row = sheet.createRow(rowNum++);
+//				
+//		        Cell cell0 = row.createCell(0);
+//		        cell0.setCellValue(Suggestionresult);
+//                  
+//			
+//			}else {
+//				System.out.println("Failed");
+//			}
+//		}
+//		 Path resultsDir = Paths.get("test-output/results");
+//         if (!Files.exists(resultsDir)) {
+//             Files.createDirectories(resultsDir);
+//         }
+//		 try (FileOutputStream fileOut = new FileOutputStream("test-output/results/suggested_texts.xlsx")) {
+//             workbook.write(fileOut);
+//         }
+//
+//         System.out.println("Suggested texts stored in Excel file successfully.");
+//
+//    
+//         // Close the workbook
+//         try {
+//        	 workbook.close();
+//         } catch (IOException e) {
+//             e.printStackTrace();
+//         }
+//		driver.quit();
+		
+		
+//		duplicate word in a string
+//		 String a="Saurav kumar is a good boy is";
+//		   a=a.toLowerCase();
+//		   int count;
+//		   String[] word=a.split(" ");
+//		   for(int i=0;i<word.length;i++){
+//		       count=1;
+//		       for(int j=i+1;j<word.length;j++){
+//		           if(word[i].equals(word[j])){
+//		               count++;
+//		               word[j]="0";
+//		           }}
+//		           if(count>1 && word[i]!="0"){
+//		               System.out.println(word[i]);
+//		           }
+//		       
+//		   }
+
+
+  
+//		char freq in a string
+//		String a="Saurav kumar is a good boy is";
+//   int[] b=new int[256];
+//   for(int i=0;i<a.length();i++) {
+//	   b[a.charAt(i)]++;
+//	   }
+//   for(int i=0;i<256;i++) {
+//	   if(b[i]>0) {
+//		   System.out.println("freq " +(char)i+ " is " +b[i]);
+//	   }
+// 
+//   }
+		
+
+		
+//		prime number
+//		int num = 100;
+//		for (int i = 2; i <= num; i++) {
+//		    int j;
+//		    for (j = 2; j * j <= i; j++) {
+//		        if (i % j == 0)
+//		        	break; // If divisible, not a prime
+//		    }
+//		    if (j * j > i) { // If no divisor found, it's a prime
+//		        System.out.println(i);
+//		    }
+//		}
+
+
+//		odd or even
+//int a=100;
+//for(int i=1;i<=a;i++) {
+//	if(i%2!=0) {
+//		System.out.println(i);
+//		
+//	}
+//}
+
+// addition of two arrays
+//int[] a= {1,2,3,4,5,6};
+//int[] b= {1,2,3,4,5,6};
+//int[]c=new int[a.length];
+//for(int i=0;i<a.length;i++) {
+//	c[i]=a[i]+b[i];
+//}
+//System.out.println(Arrays.toString(c));
+
+
+
+
+
+		
+//		Char occurance/frequency
+	
+//			    String str="Saurav kumar is a good boy is";
+//			int[] freq=new int[256];
+//			for(int i=0;i<str.length();i++){
+//			    freq[str.charAt(i)]++;
+//			}
+//			for(int i=0;i<256;i++){
+//			    if(freq[i]>0){
+//			        System.out.println("'"+(char)i+"' occurs "+freq[i]+" times");
+//			    }
+//			}
+		
+//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+//largest non repeating substring		
+//		String a="abcdabacbdcneidaefghijklabcd";
+//		int maxlen=0;
+//		int start=0;
+//		int StartIndex=0;
+//		String sub="";
+//		int[] lastIndex=new int[128];
+//
+//		for(int i=0;i<a.length();i++) {
+//			char ch=a.charAt(i);
+//		
+//		if(lastIndex[ch] >=start) {
+//			start=lastIndex[ch]+1;
+//		}
+//		lastIndex[ch]=i;
+//		if(i-start+1>maxlen) {
+//			maxlen=i-start+1;
+//			StartIndex=start;
+//		}
+//		 sub=a.substring(StartIndex, StartIndex+maxlen);
+//				
+//				
+////		max=Math.max(max,i-start+ 1);
+//		
+//}
+//		System.out.println(sub);
+//		}
+//
+//}
+
+
+
+	
+		
+		
+//		Frequency of char in a string
+//		   String a = "Saurav";
+//	        Map<Character, Integer> countMap = new HashMap<>();
+//
+//	        // Convert the string to lowercase (optional)
+//	        a = a.toLowerCase();
+//
+//	        // Loop through each character
+//	        for (int i = 0; i < a.length(); i++) {
+//	            char ch = a.charAt(i);
+//
+//	            // If character already in map, increase count
+//	            if (countMap.containsKey(ch)) {
+//	                int oldCount = countMap.get(ch);
+//	                countMap.put(ch, oldCount + 1);
+//	            } else {
+//	                // If not, add it with count 1
+//	                countMap.put(ch, 1);
+//	            }
+//	        }
+//
+//	        // Print the result
+//	        for (char key : countMap.keySet()) {
+//	            System.out.println(key + " -> " + countMap.get(key));
+//	        }
+		
+		
+//		   String a="Saurav";
+//	       int[] count=new int[256];
+//	       a=a.toLowerCase();
+//	       for(int i=0;i<a.length();i++){
+//	           char ch=a.charAt(i);
+//	           count[ch]++;
+//	       }
+//	       for(int i=0;i<256;i++){
+//	           if(count[i]>0){
+//	               System.out.println((char)i+". "+count[i]);
+//	           }
+//	       }
+	         
+//	fibbonacci series	
+//		int n1=0,n3=0,n2=1,num=10;
+//           System.out.print(n1+","+n2);
+//			for(int i=2;i<num;i++) {
+//            n3=n1+n2;
+//			System.out.print(","+n3);
+//			n1=n2;
+//			n2=n3;
+//			}
+		
+		
+		
+   
+//	String Anagram	
+//		String a1="deep";
+//		String b="peed";
+//		char[] c=a1.toCharArray();
+//		char[] d=b.toCharArray();
+//	badiya(c);
+//	badiya(d);
+//	for(int i=0;i<c.length;i++) { 
+//	 if(c[i]!=d[i]) {
+//		 System.out.println("yes");
+//		 break;
+//	 }else {
+//		 System.out.println("no");
+//	 }
+//		 
+//	}	}	
+//
+//		
+//public static void badiya(char[] a) {
+//	
+//	for (int i = 0; i < a.length; i++) {
+//        for (int j = i+1; j < a.length - 1; j++) {
+//            if (a[j] > a[j]) {
+//                // swap
+//                char temp = a[j];
+//                a[j] = a[j ];
+//                a[j] = temp;
+//            }
+//        }
+//	}
+		
+// find the missing numbner
+//		 int[] arr = {1, 2, 4, 5};
+//		 int n=5;
+//		int Actsum=0;
+//		int expsum=n*(n+1)/2;
+//		for(int num:arr) {
+//			Actsum+=num;
+//}
+//		System.out.println(expsum-Actsum);
+		
+		
+//		duplicate value comes together
+//		 int[] input ={5,2,3,4,5,2,3,4,6,6} ;
+//	      List<Integer> result = duplicate(input);
+//	      System.out.println(result);
+//	      
+//	    }
+//	    public static List<Integer> duplicate(int[] arr){
+//	    Map <Integer , List<Integer>> map = new LinkedHashMap<>();
+//	    // List<Integer>  output =new ArrayList<>();
+//	    for(int num : arr){
+//	        if(!map.containsKey(num)){
+//	            map.put(num,new ArrayList<>());
+//	        }
+//	        map.get(num).add(num);
+//	          
+//	        }
+//	        List<Integer> output = new ArrayList<>();
+//	        for(List<Integer>group : map.values()){
+//	        output.addAll(group) ;
+//	            
+//	        }
+//	    
+//	    return output;
+		
+// count the given char
+//		        String input = "saaashha";
+//		        char target ='a';
+//		        int count = count(input , target);
+//		        System.out.println(target+ ":" + count);
+//		    }
+//		    public static int count(String input, char target){
+//		        int count = 0;
+//		        target=Character.toLowerCase(target);
+//		            for(char ch : input.toCharArray()){
+//		                if(Character.isLetter(ch) && Character.toLowerCase(ch)== target){
+//		                    count++;
+//		                }
+//		            }
+//		            return count;
+		
+//	String palindrome	
+//		String a="radar";
+//		String b="";
+//		for(int i=a.length()-1;i>=0;i--) {
+//			b=b+a.charAt(i);
+//		}
+//		if(b.equals(a)) {
+//		
+//		 System.out.println("yes");
+//				  
+//		}	 else {
+//			 System.out.println("no");
+//		}
+		 
+		
+		
+//		String
+	
+
+//		 
+//		        String input = "civic";
+//		        boolean result = canBePalindrome(input, 0, "", 0);
+//		        System.out.println(result ? "✅ Can be palindrome" : "❌ Cannot be palindrome");
+//		    }
+//
+//
+//
+//	    // 1️⃣ This function counts how many times a letter appears
+//	    static int countChar(String s, char ch, int index) {
+//	        if (index == s.length()) return 0; // base case: end of string
+//	        if (s.charAt(index) == ch) {
+//	            return 1 + countChar(s, ch, index + 1); // add 1 if matched
+//	        } else {
+//	            return countChar(s, ch, index + 1); // skip if not matched
+//	        }
+//	    }
+//
+//	    // 2️⃣ This function checks if the string can be a palindrome
+//	    static  boolean canBePalindrome(String s, int index, String seen, int oddCount) {
+//	        if (index == s.length()) return oddCount <= 1; // base case
+//
+//	        char current = s.charAt(index);
+//	        if (seen.indexOf(current) != -1) {
+//	            return canBePalindrome(s, index + 1, seen, oddCount); // already checked this char
+//	        }
+//
+//	        int freq = countChar(s, current, 0); // count how many times it appears
+//	        if (freq % 2 != 0) {
+//	            oddCount++; // count how many odd letters we see
+//	        }
+//
+//	        return canBePalindrome(s, index + 1, seen + current, oddCount); // check next letter
+		
+//factorial		
+//		int n=5;
+//		int a=1;
+//			for(int i =1;i<=n;i++) {
+//			 a*=i;
+//			
+//			}
+//			System.out.println(a);
+		
+		
+		
+//		
+//		  ArrayList<Integer> arr = new ArrayList<>();
+//	        arr.add(3);
+//	        arr.add(1);
+//	        arr.add(2);
+//
+//	        sortArray(arr);  // Sort using recursion
+//
+//	        System.out.println("Sorted Array: " + arr);
+//	}
+//
+//		
+//		public static void sortArray(ArrayList<Integer> arr) {
+//	        // Base case: if array has 0 or 1 elements, it's sorted
+//	        if (arr.size() <= 1) {
+//	            return;
+//	        }
+//
+//	        // Step 1: Remove the last element
+//	        int last = arr.remove(arr.size() - 1);
+//
+//	        // Step 2: Sort the remaining array
+//	        sortArray(arr);
+//
+//	        // Step 3: Insert the last element back in the right place
+//	        insert(arr, last);
+//	    }
+//
+//	    // Helper function to insert element in the correct position
+//	    public static void insert(ArrayList<Integer> arr, int value) {
+//	        // Base case: insert if array is empty or value is greater than last element
+//	        if (arr.size() == 0 || arr.get(arr.size() - 1) <= value) {
+//	            arr.add(value);
+//	            return;
+//	        }
+//
+//	        // Remove last element and store it temporarily
+//	        int last = arr.remove(arr.size() - 1);
+//
+//	        // Recursively insert value
+//	        insert(arr, value);
+//
+//	        // Put back the stored element
+//	        arr.add(last);
+//		
+//		int n=5;
+//		for(int i=0;i<=n;i++) {
+//			for(int j=i+1;j<=n;j++) {
+//			System.out.print("*");
+//		}
+//		System.out.println(" ");
+//		}
+//		 String str = "abcd1234ab1569edhurxjsx";
+//		 str = str.toLowerCase();
+//	       char[] chars = str.toCharArray();
+//	       int length = chars.length;
+//	       boolean[] counted = new boolean[length];
+//	        System.out.println("Duplicate found");
+//	       for(int i=0;i<length;i++){
+//	           if(!counted[i] && Character.isLetterOrDigit(chars[i])){
+//	               int count =1;
+//	               for(int j=i+1;j<length;j++){
+//	                   if(chars[i] == chars[j]){
+//	                       count++;
+//	                       counted[j] = true;
+//	                   }
+//	               }
+//	               if(count>1){
+//	                   System.out.println(chars[i]+" : "+ count);
+//	               
+//	           }
+//	       }
+//	    }
+		
+//		String[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
+//	        List<List<String>> result = groupAnagrams(input);
+//
+//	        for (List<String> group : result) {
+//	            System.out.println(group);
+//	        }
+//	}
+//
+//		    public static List<List<String>> groupAnagrams(String[] words) {
+//		        Map<String, List<String>> map = new HashMap<>();
+//
+//		        for (String word : words) {
+//		            // Sort characters of the word
+//		            char[] chars = word.toCharArray();
+//		            Arrays.sort(chars);
+//		            String sortedKey = new String(chars);
+//
+//		            // Classic way without computeIfAbsent
+//		            if (!map.containsKey(sortedKey)) {
+//		                map.put(sortedKey, new ArrayList<>());
+//		            }
+//		            map.get(sortedKey).add(word);
+//		        }
+//
+//		        return new ArrayList<>(map.values());
+//		    
+//	}}
+		
+	
+//		 String[] a={"ate","tan","cat","tac","tea"};
+//	      List<List<String>> list=anagram(a);
+//	      for(List<String> word:list){
+//	          System.out.println(word);
+//	      }
+//	    }
+//	    public static List<List<String>> anagram(String[] words){
+//	        Map<String,List<String>> map=new HashMap<>();
+//	        for(String word:words){
+//	            char[] chars=word.toCharArray();
+//	            Arrays.sort(chars);
+//	            String sorted = new String(chars);
+//	        
+//	        if(!map.containsKey(sorted)){
+//	            map.put(sorted,new ArrayList<>());
+//	         
+//	        }
+//	        map.get(sorted).add(word);
+//	    }
+//	     return new ArrayList<>(map.values());
+//	}
+//	}  
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		Set<String> a=new HashSet<>();
+		a.add("saurav");
+		a.add("gaurav");
+		a.add("vinay");
+		a.add("kapil");
+		a.add("gaurav");
+		System.out.println(a);
+		
+		
+
+
+
+	
+	}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

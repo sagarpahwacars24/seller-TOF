@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;CreateLead&apos;&#x0A;- Original project: &apos;CreateLead&apos;&#x0A;- Original element: &apos;PlayWright.CreateLead.HomePage.java&apos;" description="Delete element" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;PlayWright.CreateLead{HomePage.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1742831188584" subPackages="false" version="1.0"/>
+</session>

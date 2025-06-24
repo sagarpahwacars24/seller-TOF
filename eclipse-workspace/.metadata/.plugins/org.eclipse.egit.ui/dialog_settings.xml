@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="Saurav Kumar &lt;saurav2.kumar@cars24.com&gt;"/>
+		<item value="a35294 &lt;a35294@localhost&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Saurav Kumar &lt;saurav2.kumar@cars24.com&gt;"/>
+		<item value="a35294 &lt;a35294@localhost&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="true"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/Users/a35294/eclipse-workspace/RestAssured/.git">
+			<item value="false"/>
+			<item value="Saurav Kumar &lt;saurav2.kumar@cars24.com&gt;"/>
+			<item value="add"/>
+			<item value="Saurav Kumar &lt;saurav2.kumar@cars24.com&gt;"/>
+			<item value="5ed909339aa904973b5620145753d10f94e3a8f1"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+	</section>
+</section>

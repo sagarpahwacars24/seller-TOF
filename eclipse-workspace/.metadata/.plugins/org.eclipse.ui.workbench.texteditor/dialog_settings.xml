@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="date and"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="o"/>
+			<item value="date and"/>
+			<item value="date"/>
+			<item value="Date and time selected"/>
+			<item value="date and time"/>
+			<item value="click proceed"/>
+			<item value="enable = false"/>
+			<item value="alwaysRun = true"/>
+			<item value="retry"/>
+			<item value="import java.net.http.HttpClient;"/>
+			<item value="testng"/>
+			<item value="createApptOtp"/>
+			<item value=" .post(endpoint)"/>
+			<item value="Verify active slots without token"/>
+			<item value="&quot;^CONFIRMATION PENDING$&quot;"/>
+		</list>
+		<list key="replacehistory">
+			<item value="enabled = false"/>
+			<item value="enable = false"/>
+			<item value=".put(endpoint)"/>
+			<item value="endPoint"/>
+			<item value="invalidToken"/>
+			<item value="baseURL"/>
+			<item value="token"/>
+			<item value=","/>
+			<item value="  .header(&quot;Content-Type&quot;, ContentType.JSON)"/>
+			<item value=" given().header(&quot;Authorization&quot;, authHeader)"/>
+			<item value=" given().header(&quot;Authorization&quot;, token)"/>
+			<item value=".when().post(endpoint)"/>
+			<item value="endpoint"/>
+			<item value=".get(endpoint)"/>
+			<item value="enabled = true"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1154"/>
+		<item key="DIALOG_Y_ORIGIN" value="169"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="400"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="601"/>
+		<item key="DIALOG_Y_ORIGIN" value="389"/>
+	</section>
+</section>
