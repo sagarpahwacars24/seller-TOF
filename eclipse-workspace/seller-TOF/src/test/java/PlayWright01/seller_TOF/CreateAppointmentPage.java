@@ -56,15 +56,16 @@ public class CreateAppointmentPage {
 
 	    public void enterLocationDetails() {
 	        try {
-	            page.getByRole(AriaRole.TEXTBOX, 
-	                    new Page.GetByRoleOptions().setName("Search by area/street name/")).click();
+	        	page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search by area/street name/")).click();
+	            page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Search by area/street name/")).click();
+	          
 	            ExtentReportManager.logStep("pass", "Clicked location search field");
 	            
 	            page.getByRole(AriaRole.TEXTBOX, 
-	                    new Page.GetByRoleOptions().setName("Search by area/street name/")).fill("cars24 tech");
+	                    new Page.GetByRoleOptions().setName("Search by area/street name/")).fill("SAS Tower");
 	            ExtentReportManager.logStep("pass", "Entered location search text");
 	            
-	            page.getByText("Cars24 Tech Office").click();
+	            page.getByText("SAS Tower", new Page.GetByTextOptions().setExact(true)).first().click();
 	            ExtentReportManager.logStep("pass", "Selected Cars24 Tech Office");
 	            
 	            page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Confirm location")).click();
@@ -320,6 +321,10 @@ public class CreateAppointmentPage {
 
 	    public void verifyAppointmentConfirmation() {
 	        try {
+	        	   page.locator("div").filter(new Locator.FilterOptions().setHasText(Pattern.compile("^CONFIRMATION PENDING$")))
+					.getByRole(AriaRole.IMG).click();
+		
+		            ExtentReportManager.logStep("pass", "Clicked Book inspection button");
 	            page.getByText("Appointment id:").dblclick();
 	            ExtentReportManager.logStep("pass", "Verified appointment confirmation");
 	            appointmentDetail.appointmentDetailByToken();

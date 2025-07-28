@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-02T12:42:23 IST" name="Default suite" finished-at="2025-06-02T12:43:37 IST" duration-ms="74188">
+  <suite started-at="2025-07-28T13:32:32 IST" name="Default suite" finished-at="2025-07-28T13:34:00 IST" duration-ms="88621">
     <groups>
     </groups>
-    <test started-at="2025-06-02T12:42:23 IST" name="Default test" finished-at="2025-06-02T12:43:37 IST" duration-ms="74188">
+    <test started-at="2025-07-28T13:32:32 IST" name="Default test" finished-at="2025-07-28T13:34:00 IST" duration-ms="88621">
       <class name="PlayWright01.seller_TOF.CreateAppointment">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:22 IST" name="beforeSuite" finished-at="2025-06-02T12:42:23 IST" duration-ms="232" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:32:31 IST" name="beforeSuite" finished-at="2025-07-28T13:32:32 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:23 IST" name="setUp" finished-at="2025-06-02T12:42:35 IST" duration-ms="11943" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:32:32 IST" name="setUp" finished-at="2025-07-28T13:32:44 IST" duration-ms="12483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:35 IST" name="setup" finished-at="2025-06-02T12:42:35 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:32:44 IST" name="setup" finished-at="2025-07-28T13:32:44 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:35 IST" name="initializePages" finished-at="2025-06-02T12:42:35 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:32:44 IST" name="initializePages" finished-at="2025-07-28T13:32:44 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method signature="createLead()[pri:1, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:35 IST" name="createLead" description="Create a new lead for car selling" finished-at="2025-06-02T12:43:02 IST" duration-ms="27213" status="PASS">
+        <test-method signature="createLead()[pri:1, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:32:44 IST" name="createLead" description="Create a new lead for car selling" finished-at="2025-07-28T13:33:09 IST" duration-ms="25108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createLead -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:02 IST" name="tearDown" finished-at="2025-06-02T12:43:03 IST" duration-ms="764" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:09 IST" name="tearDown" finished-at="2025-07-28T13:33:10 IST" duration-ms="652" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:03 IST" name="initializePages" finished-at="2025-06-02T12:43:03 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePages -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:03 IST" name="setup" finished-at="2025-06-02T12:43:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:10 IST" name="setup" finished-at="2025-07-28T13:33:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,11 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createAppointment()[pri:2, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:03 IST" name="createAppointment" description="Create appointment for car inspection" finished-at="2025-06-02T12:43:27 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.createLead" duration-ms="24251" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:10 IST" name="initializePages" finished-at="2025-07-28T13:33:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="createAppointment()[pri:2, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:10 IST" name="createAppointment" description="Create appointment for car inspection" finished-at="2025-07-28T13:33:26 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.createLead" duration-ms="16080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAppointment -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="tearDown" finished-at="2025-06-02T12:43:27 IST" duration-ms="346" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:26 IST" name="tearDown" finished-at="2025-07-28T13:33:26 IST" duration-ms="265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="setup" finished-at="2025-06-02T12:43:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:26 IST" name="setup" finished-at="2025-07-28T13:33:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,15 +86,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="initializePages" finished-at="2025-06-02T12:43:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:26 IST" name="initializePages" finished-at="2025-07-28T13:33:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method signature="rescheduleAppointment()[pri:3, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="rescheduleAppointment" description="Reschedule the appointment" finished-at="2025-06-02T12:43:35 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.createAppointment" duration-ms="7425" status="PASS">
+        <test-method signature="rescheduleAppointment()[pri:3, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:26 IST" name="rescheduleAppointment" description="Reschedule the appointment" finished-at="2025-07-28T13:33:29 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.createAppointment" duration-ms="2813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rescheduleAppointment -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="tearDown" finished-at="2025-06-02T12:43:35 IST" duration-ms="338" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:29 IST" name="tearDown" finished-at="2025-07-28T13:33:29 IST" duration-ms="265" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="setup" finished-at="2025-06-02T12:43:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:29 IST" name="setup" finished-at="2025-07-28T13:33:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,30 +116,123 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="initializePages" finished-at="2025-06-02T12:43:35 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:29 IST" name="initializePages" finished-at="2025-07-28T13:33:29 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method signature="cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="cancelAppointment" description="Cancel the appointment" finished-at="2025-06-02T12:43:36 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.rescheduleAppointment" duration-ms="1277" status="PASS">
+        <test-method signature="cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:33:29 IST" name="cancelAppointment" description="Cancel the appointment" finished-at="2025-07-28T13:34:00 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.rescheduleAppointment" duration-ms="30370" status="FAIL">
+          <exception class="com.microsoft.playwright.TimeoutError">
+            <message>
+              <![CDATA[Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/progress.js:75:26)
+    at Frame.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/frames.js:1021:23)
+    at FrameDispatcher.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/frameDispatcher.js:159:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Cancel booking"))
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/progress.js:75:26)
+    at Frame.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/frames.js:1021:23)
+    at FrameDispatcher.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/frameDispatcher.js:159:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Cancel booking"))
+
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+at com.microsoft.playwright.Locator.click(Locator.java:2493)
+at PlayWright01.seller_TOF.CancelAppointmentPage.cancelAppointment(CancelAppointmentPage.java:25)
+at PlayWright01.seller_TOF.CreateAppointment.cancelAppointment(CreateAppointment.java:133)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/progress.js:75:26)
+    at Frame.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/frames.js:1021:23)
+    at FrameDispatcher.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/frameDispatcher.js:159:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Cancel booking"))
+
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+... 41 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.TimeoutError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cancelAppointment -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:36 IST" name="tearDown" finished-at="2025-06-02T12:43:37 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:34:00 IST" name="tearDown" finished-at="2025-07-28T13:34:00 IST" duration-ms="381" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=cancelAppointment status=SUCCESS method=CreateAppointment.cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+                <![CDATA[[TestResult name=cancelAppointment status=FAILURE method=CreateAppointment.cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownResources()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:37 IST" name="tearDownResources" finished-at="2025-06-02T12:43:37 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="tearDownResources()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:34:00 IST" name="tearDownResources" finished-at="2025-07-28T13:34:00 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownResources -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:37 IST" name="afterSuite" finished-at="2025-06-02T12:43:38 IST" duration-ms="811" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-07-28T13:34:00 IST" name="afterSuite" finished-at="2025-07-28T13:34:01 IST" duration-ms="874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

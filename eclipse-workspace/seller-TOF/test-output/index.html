@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="PlayWright01.seller_TOF.CreateAppointment" class="method navigator-link" hash-for-method="cancelAppointment">cancelAppointment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +115,6 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="PlayWright01.seller_TOF.CreateAppointment" class="method navigator-link" hash-for-method="cancelAppointment">cancelAppointment</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="PlayWright01.seller_TOF.CreateAppointment" class="method navigator-link" hash-for-method="createAppointment">createAppointment</a> <!-- method navigator-link -->
@@ -133,9 +142,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">PlayWright01.seller_TOF.CreateAppointment</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,10 +153,93 @@
                   <a name="cancelAppointment">
                   </a> <!-- cancelAppointment -->
                   <span class="method-name">cancelAppointment</span>
+                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/progress.js:75:26)
+    at Frame.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/frames.js:1021:23)
+    at FrameDispatcher.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/frameDispatcher.js:159:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Cancel booking&quot;))
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
+	at com.microsoft.playwright.Locator.click(Locator.java:2493)
+	at PlayWright01.seller_TOF.CancelAppointmentPage.cancelAppointment(CancelAppointmentPage.java:25)
+	at PlayWright01.seller_TOF.CreateAppointment.cancelAppointment(CreateAppointment.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message=&apos;Timeout 30000ms exceeded.
+  name=&apos;TimeoutError
+  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/progress.js:75:26)
+    at Frame.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/frames.js:1021:23)
+    at FrameDispatcher.click (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/frameDispatcher.js:159:30)
+    at FrameDispatcher._handleCommand (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/playwright-java-17858309765510732710/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+-   - waiting for getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Cancel booking&quot;))
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
+	... 41 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Cancel the appointment)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">PlayWright01.seller_TOF.CreateAppointment</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="createAppointment">
@@ -180,7 +272,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/testng-eclipse--1836898596/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/t1/ztxtf3p52dj1f84sjyvn6yy00000gn/T/testng-eclipse--1031658329/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -231,21 +323,21 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createLead')
+data.setCell(0, 1, 'cancelAppointment')
 data.setCell(0, 2, 'PlayWright01.seller_TOF.CreateAppointment')
-data.setCell(0, 3, 27213);
+data.setCell(0, 3, 30370);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createAppointment')
+data.setCell(1, 1, 'createLead')
 data.setCell(1, 2, 'PlayWright01.seller_TOF.CreateAppointment')
-data.setCell(1, 3, 24251);
+data.setCell(1, 3, 25108);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'rescheduleAppointment')
+data.setCell(2, 1, 'createAppointment')
 data.setCell(2, 2, 'PlayWright01.seller_TOF.CreateAppointment')
-data.setCell(2, 3, 7425);
+data.setCell(2, 3, 16080);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'cancelAppointment')
+data.setCell(3, 1, 'rescheduleAppointment')
 data.setCell(3, 2, 'PlayWright01.seller_TOF.CreateAppointment')
-data.setCell(3, 3, 1277);
+data.setCell(3, 3, 2813);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -283,79 +375,81 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">261 ms</span>
+                <span class="method-start">243 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setup([TestResult name={null} status=CREATED method=CreateAppointment.createLead()[pri:1, instance:PlayWri...)</span>
-                <span class="method-start">12227 ms</span>
+                <span class="method-start">12746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">12244 ms</span>
+                <span class="method-start">12758 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createLead</span>
-                <span class="method-start">12262 ms</span>
+                <span class="method-start">12768 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=createLead status=SUCCESS method=CreateAppointment.createLead()[pri:1, instance:Pla...)</span>
-                <span class="method-start">39501 ms</span>
+                <span class="method-start">37903 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">initializePages</span>
-                <span class="method-start">40279 ms</span>
+                <span class="method-name">setup([TestResult name={null} status=CREATED method=CreateAppointment.createAppointment()[pri:2, instance:...)</span>
+                <span class="method-start">38570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setup([TestResult name={null} status=CREATED method=CreateAppointment.createAppointment()[pri:2, instance:...)</span>
-                <span class="method-start">40279 ms</span>
+                <span class="method-name">initializePages</span>
+                <span class="method-start">38570 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createAppointment</span>
-                <span class="method-start">40280 ms</span>
+                <span class="method-start">38571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=createAppointment status=SUCCESS method=CreateAppointment.createAppointment()[pri:2...)</span>
-                <span class="method-start">64541 ms</span>
+                <span class="method-start">54658 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup([TestResult name={null} status=CREATED method=CreateAppointment.rescheduleAppointment()[pri:3, insta...)</span>
-                <span class="method-start">64894 ms</span>
+                <span class="method-start">54926 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">64896 ms</span>
+                <span class="method-start">54927 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">rescheduleAppointment</span>
-                <span class="method-start">64898 ms</span>
+                <span class="method-start">54928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=rescheduleAppointment status=SUCCESS method=CreateAppointment.rescheduleAppointment...)</span>
-                <span class="method-start">72329 ms</span>
+                <span class="method-start">57745 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup([TestResult name={null} status=CREATED method=CreateAppointment.cancelAppointment()[pri:4, instance:...)</span>
-                <span class="method-start">72672 ms</span>
+                <span class="method-start">58017 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializePages</span>
-                <span class="method-start">72673 ms</span>
+                <span class="method-start">58019 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">cancelAppointment</span>
-                <span class="method-start">72676 ms</span>
+                <span class="method-start">58023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=cancelAppointment status=SUCCESS method=CreateAppointment.cancelAppointment()[pri:4...)</span>
-                <span class="method-start">73955 ms</span>
+                <span class="method-name">tearDown([TestResult name=cancelAppointment status=FAILURE method=CreateAppointment.cancelAppointment()[pri:4...)</span>
+                <span class="method-start">88399 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownResources</span>
-                <span class="method-start">74317 ms</span>
+                <span class="method-start">88782 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">74466 ms</span>
+                <span class="method-start">88898 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

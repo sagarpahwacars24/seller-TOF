@@ -1,6 +1,8 @@
 package PlayWright01.seller_TOF;
 
 
+import java.util.regex.Pattern;
+
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
@@ -128,14 +130,30 @@ public class RescheduleAppointmentPage {
 	    
 	    public void closeConfirmation() {
 	        try {
-	            Locator cross = page.locator("svg.sc-cvzDha.fKKpst");
+//	        	Locator cross= page.getByRole(AriaRole.BUTTON).filter(new Locator.FilterOptions().setHasText(Pattern.compile("^$")));
+//	        	System.out.println("Found?: " + cross.count());
+	        	 Locator cross1 = page.locator("#portal div").filter(new Locator.FilterOptions().setHasText("Download the CARS24 app to")).first();
+//	        	 if(cross.isVisible())  {
+//	        		 cross.click();
+//	        		  ExtentReportManager.logStep("pass", "Closed using cross button");
+//	        	 }
+//	        	 else  if(skip.isVisible()){
+//	        		skip.click();
+//	        		  ExtentReportManager.logStep("pass", "Closed using skip banner");
+//		            }else {
+	        	 
+//	            Locator cross1 = page.locator("svg.sc-cvzDha.fKKpst");
+//	            Locator cross1 = page.locator("svg.sc-cvzDha.hFIMrc");
 	            
-	            cross.waitFor(new Locator.WaitForOptions()
+	            
+	            
+	            cross1.waitFor(new Locator.WaitForOptions()
 	                    .setState(WaitForSelectorState.VISIBLE)
 	                    .setTimeout(5000));
-	            cross.scrollIntoViewIfNeeded();
-	            cross.click(new Locator.ClickOptions().setForce(true));
+	            cross1.scrollIntoViewIfNeeded();
+	            cross1.click(new Locator.ClickOptions().setForce(true));
 	            ExtentReportManager.logStep("pass", "Closed confirmation dialog");
+//	        }
 	        } catch (Exception e) {
 	            ExtentReportManager.logStep("fail", "Failed to close confirmation: " + e.getMessage());
 	            ExtentReportManager.addScreenshot(page, "closeConfirmation_Failure");
