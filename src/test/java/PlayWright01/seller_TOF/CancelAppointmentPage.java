@@ -16,7 +16,9 @@ public class CancelAppointmentPage {
 
     public void cancelAppointment() {
         try {
-        	 page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("CANCEL")).click();
+        	 page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Cancel")).click();
+        	
+        	 
             
             ExtentReportManager.logStep("pass", "Clicked Cancel button");
             

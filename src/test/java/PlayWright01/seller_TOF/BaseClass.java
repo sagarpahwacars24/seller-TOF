@@ -49,7 +49,9 @@ public class BaseClass {
                 .setViewportSize(398, 820));
         
         page = context.newPage();
-        page.navigate("https://stage-c2b-website.qac24svc.dev/sell-used-cars");
+        environmentEndpoints stageURL = environmentEndpoints.STAGE;
+        String url=stageURL.getBaseUrl();
+        page.navigate(url);
     }
     
     @BeforeMethod

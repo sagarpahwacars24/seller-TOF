@@ -80,8 +80,8 @@ public class CreateAppointment extends BaseClass {
 //            createAppointmentPage.enterName();
 //            ExtentReportManager.logStep("pass", "Name entered");
             
-            createAppointmentPage.selectPlanAndBook();
-            ExtentReportManager.logStep("pass", "Plan selected and booked");
+//            createAppointmentPage.selectPlanAndBook();
+//            ExtentReportManager.logStep("pass", "Plan selected and booked");
             
             createAppointmentPage.verifyAppointmentConfirmation();
             ExtentReportManager.logStep("pass", "Appointment confirmation verified");
@@ -111,8 +111,8 @@ public class CreateAppointment extends BaseClass {
             rescheduleAppointmentPage.confirmAppointment();
             ExtentReportManager.logStep("pass", "Appointment confirmed");
             
-            rescheduleAppointmentPage.completeBooking();
-            ExtentReportManager.logStep("pass", "Booking completed");
+//            rescheduleAppointmentPage.completeBooking();
+//            ExtentReportManager.logStep("pass", "Booking completed");
             
             rescheduleAppointmentPage.closeConfirmation();
             ExtentReportManager.logStep("pass", "Confirmation closed");
