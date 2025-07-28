@@ -1,0 +1,40 @@
+# Ignore target directory (Maven build output)
+target/
+
+# Ignore Eclipse-specific files
+.classpath
+.project
+.settings/
+
+# Ignore IntelliJ files (if you switch IDEs)
+.idea/
+*.iml
+
+# Ignore test reports
+test-output/
+surefire-reports/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore OS/system files
+.DS_Store
+.Trash/
+
+# Ignore user-specific files
+*.local
+*.bak
+*.orig
+
+# Maven Wrapper files (if you use them, keep)
+.mvn/wrapper/maven-wrapper.jar
+
+# Token or credential files
+token.txt
+
+# Ignore Playwright or node-related files (if relevant)
+node_modules/
+package-lock.json
+playwright.config.ts
