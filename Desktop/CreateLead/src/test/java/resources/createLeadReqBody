@@ -1,0 +1,19 @@
+{
+    "phone": "{{randomPhoneNumber}}",
+    "make_id": 21,
+    "model_id": 295,
+    "year_id": 51220,
+    "variant_id": 7325,
+    "kms": 35000,
+    "state_id": 2,
+    "whatsapp_consent": false,
+    "vehicle_reg_no": "AP31BP6789",
+    "rto_id": 419,
+    "fullname": "Saurav",
+    "user_city_id": 2,
+    "ans_id": 1,
+    "postal_code": "122007",
+    "sell_reason": "Financial_need",
+    "dup": true
+   
+}
