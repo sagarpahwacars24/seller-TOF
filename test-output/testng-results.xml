@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-02T12:42:23 IST" name="Default suite" finished-at="2025-06-02T12:43:37 IST" duration-ms="74188">
+    <groups>
+    </groups>
+    <test started-at="2025-06-02T12:42:23 IST" name="Default test" finished-at="2025-06-02T12:43:37 IST" duration-ms="74188">
+      <class name="PlayWright01.seller_TOF.CreateAppointment">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:22 IST" name="beforeSuite" finished-at="2025-06-02T12:42:23 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:23 IST" name="setUp" finished-at="2025-06-02T12:42:35 IST" duration-ms="11943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:35 IST" name="setup" finished-at="2025-06-02T12:42:35 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CreateAppointment.createLead()[pri:1, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:35 IST" name="initializePages" finished-at="2025-06-02T12:42:35 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="createLead()[pri:1, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:42:35 IST" name="createLead" description="Create a new lead for car selling" finished-at="2025-06-02T12:43:02 IST" duration-ms="27213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:02 IST" name="tearDown" finished-at="2025-06-02T12:43:03 IST" duration-ms="764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createLead status=SUCCESS method=CreateAppointment.createLead()[pri:1, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:03 IST" name="initializePages" finished-at="2025-06-02T12:43:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:03 IST" name="setup" finished-at="2025-06-02T12:43:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CreateAppointment.createAppointment()[pri:2, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createAppointment()[pri:2, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:03 IST" name="createAppointment" description="Create appointment for car inspection" finished-at="2025-06-02T12:43:27 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.createLead" duration-ms="24251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAppointment -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="tearDown" finished-at="2025-06-02T12:43:27 IST" duration-ms="346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createAppointment status=SUCCESS method=CreateAppointment.createAppointment()[pri:2, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="setup" finished-at="2025-06-02T12:43:27 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CreateAppointment.rescheduleAppointment()[pri:3, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="initializePages" finished-at="2025-06-02T12:43:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="rescheduleAppointment()[pri:3, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:27 IST" name="rescheduleAppointment" description="Reschedule the appointment" finished-at="2025-06-02T12:43:35 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.createAppointment" duration-ms="7425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rescheduleAppointment -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="tearDown" finished-at="2025-06-02T12:43:35 IST" duration-ms="338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=rescheduleAppointment status=SUCCESS method=CreateAppointment.rescheduleAppointment()[pri:3, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="setup" finished-at="2025-06-02T12:43:35 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=CreateAppointment.cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="initializePages" finished-at="2025-06-02T12:43:35 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:35 IST" name="cancelAppointment" description="Cancel the appointment" finished-at="2025-06-02T12:43:36 IST" depends-on-methods="PlayWright01.seller_TOF.CreateAppointment.rescheduleAppointment" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelAppointment -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:36 IST" name="tearDown" finished-at="2025-06-02T12:43:37 IST" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cancelAppointment status=SUCCESS method=CreateAppointment.cancelAppointment()[pri:4, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownResources()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:37 IST" name="tearDownResources" finished-at="2025-06-02T12:43:37 IST" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownResources -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:PlayWright01.seller_TOF.CreateAppointment@4bdeaabb]" started-at="2025-06-02T12:43:37 IST" name="afterSuite" finished-at="2025-06-02T12:43:38 IST" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- PlayWright01.seller_TOF.CreateAppointment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
