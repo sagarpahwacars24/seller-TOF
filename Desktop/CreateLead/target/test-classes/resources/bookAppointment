@@ -1,0 +1,27 @@
+{
+    "appointment": {
+        "date": "{{futureDate}}",
+        "device_category": "m-web",
+        "fullname": "Customer",
+        "loc": 3,
+        "location": 299,
+        "phone": "{{randomPhoneNumber}}",
+        "time": "{{futureTime}}",
+        "zone_id": 48,
+        "appointment_type": "original",
+        "whatsapp_consent": true,
+        "pincode": "122001",
+        "gaClientId": "1501695385.1742996388",
+        "cibil_consent": "yes",
+       "autoverify":"yes",
+        "service_history_consent": true
+    },
+    "appointment_geo": {
+        "user_lat": 28.4410323,
+        "user_lng": 77.03964049999999,
+        "appointment_address": "Cars24 Tech Office, CH Baktawar Singh Road, near Medanta, Medicity, Islampur Colony, Sector 38, Gurugram, Haryana, India",
+        "address1": "ccc",
+        "address2": null,
+        "address_type": "home"
+    }
+}

@@ -1,0 +1,191 @@
+package API;
+
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import org.hamcrest.Matchers;
+
+import static io.restassured.RestAssured.given;
+
+public class Create_Lead {
+
+    public static void main(String[] args) {
+        // Base URI
+        RestAssured.baseURI = "https://lead-service-java-stage.qac24svc.dev";
+
+        // API Endpoint
+        String endpoint = "/create-lead?source=original";
+
+        // Request Headers
+        String authorization = "Basic cmV0YWlsOldQb21TUXcxM1JFTEdXeEpkMV95RDNhWG1JcFJzV0NX";
+        String deviceCategory = "m-web";
+        String cookie = "statsigStableId=4929ee09-1a67-40a3-9f02-60610b6f8103; JSESSIONID=F0291AB44F56B7150F143C23C44D82A6";
+
+        // Base Request Body
+        String requestBody = """
+        {
+            "phone": "8139956991",
+            "make_id": 21,
+            "model_id": 146,
+            "year_id": 31361,
+            "variant_id": 7704,
+            "kms": 40000,
+            "lat": null, 
+            "lng": null, 
+            "state_id": 2,
+            "whatsapp_consent": false,
+            "vehicle_reg_no": "AP31BP6789",
+            "rto_id": null,
+            "fullname": "API",
+            "user_city_id": 5,
+            "ans_id": 1,
+            "app_version": "10.12.5",
+            "postal_code": "201301",
+            "dup": true
+        }
+        """;
+
+        // Functional Testing Scenarios
+        functionalTests(endpoint, authorization, deviceCategory, cookie, requestBody);
+
+        // Non-Functional Testing Scenarios
+        nonFunctionalTests(endpoint, authorization, deviceCategory, cookie, requestBody);
+
+        // Security Testing Scenarios
+        securityTests(endpoint, deviceCategory, requestBody);
+    }
+
+    private static void functionalTests(String endpoint, String authorization, String deviceCategory, String cookie, String requestBody) {
+        System.out.println("---- Functional Testing ----");
+
+        // Positive Test Case - Valid Request
+        Response response = given()
+            .header("Authorization", authorization)
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .header("Cookie", cookie)
+            .body(requestBody)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(200)
+            .body("type", Matchers.equalTo("success")) // Validate specific field
+            .extract()
+            .response();
+
+        System.out.println("Positive Test Case Response: " + response.getBody().asString());
+
+        // Negative Test Case - Invalid Phone Number
+        String invalidPhoneRequest = requestBody.replace("8139956991", "invalid-phone");
+        given()
+            .header("Authorization", authorization)
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .header("Cookie", cookie)
+            .body(invalidPhoneRequest)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(400)
+            .body("message", Matchers.equalTo("Invalid Mobile No."));
+        System.out.println("Negative Test Case Response: " + response.getBody().asString());
+        // Boundary Test Case - Very High KMs
+        String highKmRequest = requestBody.replace("\"kms\": 40000", "\"kms\": 9999999");
+        given()
+            .header("Authorization", authorization)
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .header("Cookie", cookie)
+            .body(highKmRequest)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(200)
+            .body("status", Matchers.equalTo("success"));
+    }
+
+    private static void nonFunctionalTests(String endpoint, String authorization, String deviceCategory, String cookie, String requestBody) {
+        System.out.println("---- Non-Functional Testing ----");
+
+        // Performance Test - Measure Response Time
+        Response response = given()
+            .header("Authorization", authorization)
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .header("Cookie", cookie)
+            .body(requestBody)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(200)
+            .time(Matchers.lessThan(2000L)) // Assert response time is less than 2 seconds
+            .extract()
+            .response();
+
+        System.out.println("Response Time: " + response.getTime() + "ms");
+
+        // Load Test - Sending Multiple Requests
+        for (int i = 0; i < 10; i++) {
+            given()
+                .header("Authorization", authorization)
+                .header("devicecategory", deviceCategory)
+                .header("Content-Type", ContentType.JSON)
+                .header("Cookie", cookie)
+                .body(requestBody)
+            .when()
+                .post(endpoint)
+            .then()
+                .assertThat()
+                .statusCode(200);
+        }
+
+        System.out.println("Load Test: 10 requests executed successfully.");
+    }
+
+    private static void securityTests(String endpoint, String deviceCategory, String requestBody) {
+        System.out.println("---- Security Testing ----");
+
+        // Missing Authorization Header
+        given()
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .body(requestBody)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(401)
+            .body("message", Matchers.equalTo("Unauthorized"));
+
+        // Invalid Authorization Header
+        given()
+            .header("Authorization", "Basic InvalidToken")
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .body(requestBody)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(401)
+            .body("message", Matchers.equalTo("Unauthorized"));
+
+        // SQL Injection Test
+        String sqlInjectionPayload = requestBody.replace("\"fullname\": \"API\"", "\"fullname\": \"API' OR '1'='1\"");
+        given()
+            .header("Authorization", "Basic cmV0YWlsOldQb21TUXcxM1JFTEdXeEpkMV95RDNhWG1JcFJzV0NX")
+            .header("devicecategory", deviceCategory)
+            .header("Content-Type", ContentType.JSON)
+            .body(sqlInjectionPayload)
+        .when()
+            .post(endpoint)
+        .then()
+            .assertThat()
+            .statusCode(400)
+            .body("message", Matchers.containsString("Invalid input"));
+    }
+}
